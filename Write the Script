@@ -1,0 +1,10 @@
+#!/bin/bash
+
+SOURCE="project_data"
+DESTINATION="backup"
+
+DATE=$(date +%F)
+
+tar -czf $DESTINATION/project_backup_$DATE.tar.gz $SOURCE
+
+echo "Backup Completed Successfully!"
